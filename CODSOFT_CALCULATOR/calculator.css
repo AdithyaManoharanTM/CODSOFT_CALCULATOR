@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-screen-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.operation-screen, .calculator-screen {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #252525;
+    color: white;
+    text-align: right;
+    padding: 1px;
+    font-size: 1.5em;
+}
+
+.calculator-screen {
+    height: 60px;
+    font-size: 2em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+button {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+button.operator {
+    background-color: #f9a825;
+    color: white;
+}
+
+button.equal-sign {
+    grid-column: span 3;
+    background-color: #4caf50;
+    color: white;
+}
+button.delete-key
+{
+    background-color:aquamarine;
+    color:black;
+}
+
+button.all-clear {
+    background-color: #f44336;
+    color: white;
+}
+
